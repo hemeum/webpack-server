@@ -3,10 +3,10 @@ const app = express()
 const path = require('path');
 const port = 3000
 
-app.use(express.static('./../webpack/dist')); 
+app.use(express.static('https://hemeum.github.io/webpack-client/')); 
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './webpack/dist/index.html'));
+  res.sendFile(path.join(__dirname, 'https://hemeum.github.io/webpack-client/index.html'));
 })
 
 app.listen(port, () => {
