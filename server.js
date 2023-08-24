@@ -12,7 +12,7 @@ const port = 3000;
 app.use(express.static(path.resolve(__dirname,'./../webpack/dist')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './../webpack', 'dist', 'index.html'));
+  res.sendFile(path.resolve(__dirname, './../webpack', 'dist', 'bundle.js'));
 });
 
 app.listen(port, () => {
