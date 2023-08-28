@@ -15,7 +15,7 @@ const port = 3000;
 //   res.sendFile(path.resolve(__dirname, './../webpack', 'dist', 'index.html'));
 // });
 
-app.get('/', () => {
+app.get('/', (req, res) => {
   res.send('sgasgsag')
 })
 
