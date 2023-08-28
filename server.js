@@ -9,14 +9,14 @@ const port = 3000;
 // 서버를 배포하면 build에 있는 html 등의 static 파일을 보내주는 것.
 // 배포는 localhost를 도메인으로 만드는 것임!!!!!!!
 
-app.use(express.static(path.resolve(__dirname,'./../webpack/dist')));
+// app.use(express.static(path.resolve(__dirname,'./../webpack/dist')));
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.resolve(__dirname, './../webpack', 'dist', 'index.html'));
 // });
 
 app.get('/', () => {
-  res.send('sgasgsag');
+  res.send('sgasgsag')
 })
 
 app.listen(port, () => {
