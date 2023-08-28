@@ -11,9 +11,13 @@ const port = 3000;
 
 app.use(express.static(path.resolve(__dirname,'./../webpack/dist')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './../webpack', 'dist', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, './../webpack', 'dist', 'index.html'));
+// });
+
+app.get('/', () => {
+  res.send('sgasgsag');
+})
 
 app.listen(port, () => {
   console.log(`서버 열렸다. ${port}`)
